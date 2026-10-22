@@ -1,8 +1,21 @@
-# Net Speed Monitor
+<p align="center">
+  <img src="assets/logo.svg" width="128" height="128" alt="Net Speed Monitor Logo">
+</p>
 
-[![GNOME Shell 45-50](https://img.shields.io/badge/GNOME%20Shell-45%20%7C%2046%20%7C%2047%20%7C%2048%20%7C%2049%20%7C%2050-blue.svg)](https://extensions.gnome.org)
-[![License: GPL-3.0](https://img.shields.io/badge/License-GPLv3-green.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![Platform: Linux / Wayland & X11](https://img.shields.io/badge/Platform-Linux%20(Wayland%20%2F%20X11)-orange.svg)]()
+<h1 align="center">Net Speed Monitor</h1>
+
+<p align="center">
+  <b>Lightweight, real-time internet download & upload monitor for GNOME Shell 45–50</b>
+</p>
+
+<p align="center">
+  <a href="https://github.com/parikshan-sudo/net-speed-monitor/actions"><img src="https://github.com/parikshan-sudo/net-speed-monitor/actions/workflows/ci.yml/badge.svg" alt="CI Status"></a>
+  <a href="https://extensions.gnome.org"><img src="https://img.shields.io/badge/GNOME%20Shell-45%20%7C%2046%20%7C%2047%20%7C%2048%20%7C%2049%20%7C%2050-blue.svg?logo=gnome" alt="GNOME Shell"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-GPLv3-green.svg" alt="GPLv3"></a>
+  <a href="https://github.com/parikshan-sudo/net-speed-monitor/releases"><img src="https://img.shields.io/github/v/release/parikshan-sudo/net-speed-monitor?label=Release&color=orange" alt="Release"></a>
+</p>
+
+---
 
 A lightweight, production-quality GNOME Shell extension that displays **real-time internet download and upload transfer rates** directly in the top panel, coupled with an interactive dashboard, live hardware-accelerated traffic graph, connection intelligence, and an on-demand speed test.
 

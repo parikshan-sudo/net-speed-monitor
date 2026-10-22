@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <!-- GNOME Symbolic Icon: net-speed-monitor-symbolic -->
+  <path d="M 8 1 C 4.134 1 1 4.134 1 8 C 1 9.933 1.784 11.683 3.062 12.938 L 4.469 11.531 C 3.562 10.608 3 9.369 3 8 C 3 5.239 5.239 3 8 3 C 10.761 3 13 5.239 13 8 C 13 9.369 12.438 10.608 11.531 11.531 L 12.938 12.938 C 14.216 11.683 15 9.933 15 8 C 15 4.134 11.866 1 8 1 z" fill="currentColor"/>
+  <!-- Down arrow (Download) -->
+  <path d="M 5 5 L 5 8 L 3.5 8 L 5.5 10.5 L 7.5 8 L 6 8 L 6 5 Z" fill="currentColor"/>
+  <!-- Up arrow (Upload) -->
+  <path d="M 10.5 5.5 L 8.5 8 L 10 8 L 10 11 L 11 11 L 11 8 L 12.5 8 Z" fill="currentColor"/>
+  <!-- Center gauge tick -->
+  <circle cx="8" cy="8" r="1" fill="currentColor"/>
+</svg>

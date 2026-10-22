@@ -1,0 +1,311 @@
+# Net Speed Monitor GNOME Shell Extension.
+# Copyright (C) 2026 Parikshan
+# This file is distributed under the same license as the net-speed-monitor package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: net-speed-monitor 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/parikshan-sudo/net-speed-monitor/issues\n"
+"POT-Creation-Date: 2026-10-22 22:30+0545\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: prefs.js:204
+msgid "About"
+msgstr ""
+
+#: prefs.js:218
+msgid "About Net Speed Monitor"
+msgstr ""
+
+#: prefs.js:118
+msgid "All (sum all active)"
+msgstr ""
+
+#: prefs.js:117
+msgid "Auto (default gateway)"
+msgstr ""
+
+#: prefs.js:115
+msgid "Auto selects the active default route. All combines all interfaces."
+msgstr ""
+
+#: prefs.js:110
+msgid "Choose which network interfaces to monitor."
+msgstr ""
+
+#: prefs.js:66
+msgid "Compact combined"
+msgstr ""
+
+#: prefs.js:87
+msgid "Decimal Places"
+msgstr ""
+
+#: prefs.js:233
+msgid "Developer"
+msgstr ""
+
+#: prefs.js:60
+msgid "Display Mode"
+msgstr ""
+
+#: prefs.js:63
+msgid "Download + Upload"
+msgstr ""
+
+#: prefs.js:64
+msgid "Download only"
+msgstr ""
+
+#: prefs.js:74
+msgid "Dynamic (KB/s, MB/s, GB/s)"
+msgstr ""
+
+#: prefs.js:79
+msgid "Dynamic Bits (Kbps, Mbps, Gbps)"
+msgstr ""
+
+#: prefs.js:151
+msgid "Enable Historical Storage"
+msgstr ""
+
+#: prefs.js:49
+msgid "Enable Monitoring"
+msgstr ""
+
+#: prefs.js:172
+msgid "Enable Notifications"
+msgstr ""
+
+#: prefs.js:173
+msgid "Enable or disable all smart notifications."
+msgstr ""
+
+#: prefs.js:199
+msgid "Enable or disable the speed test panel in the dashboard."
+msgstr ""
+
+#: prefs.js:80
+msgid "Force Bits (bps)"
+msgstr ""
+
+#: prefs.js:75
+msgid "Force Bytes (B/s)"
+msgstr ""
+
+#: prefs.js:83
+msgid "Force Gigabits (Gbps)"
+msgstr ""
+
+#: prefs.js:78
+msgid "Force Gigabytes (GB/s)"
+msgstr ""
+
+#: prefs.js:81
+msgid "Force Kilobits (Kbps)"
+msgstr ""
+
+#: prefs.js:76
+msgid "Force Kilobytes (KB/s)"
+msgstr ""
+
+#: prefs.js:82
+msgid "Force Megabits (Mbps)"
+msgstr ""
+
+#: prefs.js:77
+msgid "Force Megabytes (MB/s)"
+msgstr ""
+
+#: prefs.js:46
+msgid "General"
+msgstr ""
+
+#: prefs.js:242
+msgid "GitHub Repository"
+msgstr ""
+
+#: prefs.js:135
+msgid "Graph"
+msgstr ""
+
+#: prefs.js:140
+msgid "Graph Settings"
+msgstr ""
+
+#: prefs.js:176
+msgid "High-Usage Threshold (MB/s)"
+msgstr ""
+
+#: prefs.js:148
+msgid "Historical Storage"
+msgstr ""
+
+#: prefs.js:143
+msgid "History Window (minutes)"
+msgstr ""
+
+#: prefs.js:156
+msgid "How many days of historical data to keep."
+msgstr ""
+
+#: prefs.js:144
+msgid "How many minutes of history to display in the speed graph."
+msgstr ""
+
+#: prefs.js:53
+msgid "How often to sample network counters. 1000 ms recommended."
+msgstr ""
+
+#: prefs.js:67
+msgid "Icon only"
+msgstr ""
+
+#: prefs.js:91
+msgid "Indicator Label"
+msgstr ""
+
+#: prefs.js:103
+msgid "Interface"
+msgstr ""
+
+#: prefs.js:124
+msgid "Interface Name"
+msgstr ""
+
+#: prefs.js:109
+msgid "Interface Selection"
+msgstr ""
+
+#: prefs.js:253
+msgid "Issue Tracker & Feature Requests"
+msgstr ""
+
+#: prefs.js:264
+msgid "License"
+msgstr ""
+
+#: prefs.js:238
+msgid "Links & Community"
+msgstr ""
+
+#: prefs.js:182
+msgid "Minimum time between repeated notifications."
+msgstr ""
+
+#: prefs.js:40
+msgid "Monitoring"
+msgstr ""
+
+#: prefs.js:97
+msgid "None (numbers only)"
+msgstr ""
+
+#: prefs.js:181
+msgid "Notification Cooldown (seconds)"
+msgstr ""
+
+#: prefs.js:161
+msgid "Notifications"
+msgstr ""
+
+#: prefs.js:88
+msgid "Number of decimal digits shown in speeds (0 to 3)."
+msgstr ""
+
+#: prefs.js:193
+msgid "Optional Speed Test"
+msgstr ""
+
+#: prefs.js:168
+msgid "Optional notifications for network events. Disabled by default to prevent disruption."
+msgstr ""
+
+#: prefs.js:57
+msgid "Panel Display"
+msgstr ""
+
+#: prefs.js:214
+msgid "Real-time internet download & upload monitor for GNOME Shell"
+msgstr ""
+
+#: prefs.js:280
+msgid "Real-time internet speed monitor in the top panel with live graph, session statistics, speed test, and configurable interface selection."
+msgstr ""
+
+#: prefs.js:52
+msgid "Refresh Interval (ms)"
+msgstr ""
+
+#: prefs.js:155
+msgid "Retention (days)"
+msgstr ""
+
+#: prefs.js:152
+msgid "Save daily network totals and peak speeds to disk."
+msgstr ""
+
+#: prefs.js:114
+msgid "Selection Mode"
+msgstr ""
+
+#: prefs.js:177
+msgid "Send a notification when combined traffic exceeds this rate. 0 = disabled."
+msgstr ""
+
+#: prefs.js:92
+msgid "Short prefix style in the panel indicator."
+msgstr ""
+
+#: prefs.js:198
+msgid "Show Speed Test in Dashboard"
+msgstr ""
+
+#: prefs.js:167
+msgid "Smart Notifications"
+msgstr ""
+
+#: prefs.js:119
+msgid "Specific interface"
+msgstr ""
+
+#: prefs.js:187
+msgid "Speed Test"
+msgstr ""
+
+#: prefs.js:71
+msgid "Speed Units"
+msgstr ""
+
+#: prefs.js:194
+msgid "The speed test actively transfers data to measure your connection. It uses Cloudflare's public speed test API. No account required. Tests run only on explicit request."
+msgstr ""
+
+#: prefs.js:50
+msgid "Turn live network speed monitoring on or off."
+msgstr ""
+
+#: prefs.js:72
+msgid "Units used for displayed transfer rates."
+msgstr ""
+
+#: prefs.js:65
+msgid "Upload only"
+msgstr ""
+
+#: prefs.js:227
+msgid "Version"
+msgstr ""
+
+#: prefs.js:61
+msgid "What to show in the top panel indicator."
+msgstr ""
+

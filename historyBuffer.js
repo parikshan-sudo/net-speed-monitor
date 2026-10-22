@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+// SPDX-FileCopyrightText: 2026 Parikshan
 /**
  * historyBuffer.js — Bounded ring-buffer for graph history data.
  *
