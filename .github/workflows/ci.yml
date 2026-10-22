@@ -25,12 +25,16 @@ jobs:
       - name: Validate metadata.json
         run: |
           python3 -c "
-          import json
+          import json, re
           with open('metadata.json') as f:
               m = json.load(f)
-          assert 'uuid' in m and m['uuid'] == 'net-speed-monitor@pnr.tech'
-          assert 'shell-version' in m and len(m['shell-version']) > 0
-          print('metadata.json is valid!')
+          assert m.get('name') and isinstance(m['name'], str), 'Missing name'
+          assert m.get('description') and isinstance(m['description'], str), 'Missing description'
+          assert m.get('uuid') == 'net-speed-monitor@pnr.tech', 'Invalid UUID'
+          assert isinstance(m.get('shell-version'), list) and len(m['shell-version']) > 0, 'Missing shell-version'
+          assert m.get('url') and re.match(r'^https?://', m['url']), 'Missing or invalid url'
+          assert m.get('settings-schema'), 'Missing settings-schema'
+          print('metadata.json conforms to EGO requirements!')
           "
 
       - name: Build Distribution Zip

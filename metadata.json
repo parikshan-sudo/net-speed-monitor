@@ -4,7 +4,7 @@
   "uuid": "net-speed-monitor@pnr.tech",
   "version": 1,
   "shell-version": ["45", "46", "47", "48", "49", "50"],
-  "url": "",
+  "url": "https://github.com/parikshan-sudo/net-speed-monitor",
   "settings-schema": "org.gnome.shell.extensions.net-speed-monitor",
   "gettext-domain": "net-speed-monitor"
 }

@@ -49,7 +49,7 @@ A lightweight, production-quality GNOME Shell extension that displays **real-tim
 ### Option 1: One-Line Install from Source
 
 ```bash
-git clone https://github.com/your-username/net-speed-monitor.git
+git clone https://github.com/parikshan-sudo/net-speed-monitor.git
 cd net-speed-monitor
 make install
 ```

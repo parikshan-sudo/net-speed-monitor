@@ -39,7 +39,7 @@ sudo pacman -S --needed git make zip glib2
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/net-speed-monitor.git
+   git clone https://github.com/parikshan-sudo/net-speed-monitor.git
    cd net-speed-monitor
    ```
 

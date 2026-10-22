@@ -33,15 +33,23 @@ compile-schemas:
 	@echo "Schemas compiled successfully."
 
 check:
-	@echo "Validating metadata.json..."
-	@python3 -c "import json; m = json.load(open('metadata.json')); assert m['uuid'] == '$(UUID)'"
+	@echo "Validating metadata.json against EGO requirements..."
+	@python3 -c "import json, re; m = json.load(open('metadata.json')); \
+		assert m.get('name') and isinstance(m['name'], str), 'Missing name'; \
+		assert m.get('description') and isinstance(m['description'], str), 'Missing description'; \
+		assert m.get('uuid') == '$(UUID)', 'Invalid or missing UUID'; \
+		assert isinstance(m.get('shell-version'), list) and len(m['shell-version']) > 0, 'Missing shell-version'; \
+		assert m.get('url') and re.match(r'^https?://', m['url']), 'Missing or invalid url in metadata.json'; \
+		assert m.get('settings-schema'), 'Missing settings-schema'; \
+		print('✓ metadata.json conforms to extensions.gnome.org (EGO) specifications.')"
 	@echo "Validating schema XML..."
-	@python3 -c "import xml.etree.ElementTree as ET; ET.parse('$(SCHEMA_FILE)')"
+	@python3 -c "import xml.etree.ElementTree as ET; ET.parse('$(SCHEMA_FILE)'); print('✓ Schema XML is valid.')"
 	@echo "Validating JavaScript syntax..."
 	@for f in $(filter %.js,$(SOURCES)); do \
 		python3 -c "code = open('$$f').read(); assert code.count('{') == code.count('}'), f'Brace mismatch in $$f'"; \
 	done
-	@echo "All static checks passed."
+	@echo "✓ JavaScript brace checks passed."
+	@echo "All static and EGO checks passed."
 
 install: build
 	@echo "Installing extension to $(EXT_DIR)..."
