@@ -1,0 +1,24 @@
+# Compiled schemas
+schemas/gschemas.compiled
+
+# Distribution packages & zip builds
+*.zip
+dist/
+build/
+
+# Temporary and test artifacts
+*.tmp
+*.bin
+/tmp/
+
+# OS / Editor files
+.DS_Store
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# Node / JS testing
+node_modules/
+package-lock.json

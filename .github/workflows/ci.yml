@@ -1,0 +1,44 @@
+name: CI & Packaging
+
+on:
+  push:
+    branches: [ "main", "master" ]
+    tags: [ "v*" ]
+  pull_request:
+    branches: [ "main", "master" ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libglib2.0-bin zip gettext
+
+      - name: Validate GSettings XML Schema
+        run: |
+          glib-compile-schemas --strict schemas/
+
+      - name: Validate metadata.json
+        run: |
+          python3 -c "
+          import json
+          with open('metadata.json') as f:
+              m = json.load(f)
+          assert 'uuid' in m and m['uuid'] == 'net-speed-monitor@pnr.tech'
+          assert 'shell-version' in m and len(m['shell-version']) > 0
+          print('metadata.json is valid!')
+          "
+
+      - name: Build Distribution Zip
+        run: |
+          bash package.sh
+
+      - name: Upload Build Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: net-speed-monitor-extension
+          path: dist/*.zip

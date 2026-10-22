@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.net-speed-monitor"
+          path="/org/gnome/shell/extensions/net-speed-monitor/">
+
+    <!-- Core monitoring -->
+    <key name="monitoring-enabled" type="b">
+      <default>true</default>
+      <summary>Enable live monitoring</summary>
+      <description>Enable or disable the real-time network speed monitoring.</description>
+    </key>
+
+    <key name="refresh-interval" type="i">
+      <default>1000</default>
+      <range min="500" max="10000"/>
+      <summary>Refresh interval in milliseconds</summary>
+      <description>How often to update the displayed speed values. 1000 ms recommended.</description>
+    </key>
+
+    <!-- Display -->
+    <key name="display-mode" type="s">
+      <default>'both'</default>
+      <choices>
+        <choice value="download"/>
+        <choice value="upload"/>
+        <choice value="both"/>
+        <choice value="compact"/>
+        <choice value="icon-only"/>
+      </choices>
+      <summary>Panel display mode</summary>
+      <description>What to show in the top panel indicator.</description>
+    </key>
+
+    <key name="speed-unit" type="s">
+      <default>'auto'</default>
+      <choices>
+        <choice value="auto"/>
+        <choice value="Bps"/>
+        <choice value="KBps"/>
+        <choice value="MBps"/>
+        <choice value="KiBps"/>
+        <choice value="MiBps"/>
+      </choices>
+      <summary>Speed unit</summary>
+      <description>Units used to display transfer rates.</description>
+    </key>
+
+    <key name="use-fixed-width" type="b">
+      <default>true</default>
+      <summary>Fixed panel width</summary>
+      <description>Use fixed-width panel label to prevent shifting nearby elements.</description>
+    </key>
+
+    <key name="show-icon" type="b">
+      <default>false</default>
+      <summary>Show network icon</summary>
+      <description>Show or hide the network icon in the top panel indicator (default is false to avoid redundancy with system network icon).</description>
+    </key>
+
+    <!-- Interface selection -->
+    <key name="interface-mode" type="s">
+      <default>'auto'</default>
+      <choices>
+        <choice value="auto"/>
+        <choice value="manual"/>
+      </choices>
+      <summary>Interface selection mode</summary>
+      <description>Auto detects the active default-route interface; manual uses interface-name.</description>
+    </key>
+
+    <key name="interface-name" type="s">
+      <default>''</default>
+      <summary>Manual interface name</summary>
+      <description>Network interface to monitor when interface-mode is manual.</description>
+    </key>
+
+    <!-- Graph settings -->
+    <key name="graph-history-minutes" type="i">
+      <default>5</default>
+      <range min="1" max="30"/>
+      <summary>Graph history duration in minutes</summary>
+    </key>
+
+    <key name="graph-paused" type="b">
+      <default>false</default>
+      <summary>Graph updates paused</summary>
+    </key>
+
+    <!-- Session and history -->
+    <key name="session-stats-enabled" type="b">
+      <default>true</default>
+      <summary>Enable session statistics</summary>
+    </key>
+
+    <key name="history-enabled" type="b">
+      <default>false</default>
+      <summary>Enable historical data storage</summary>
+    </key>
+
+    <key name="history-retention-days" type="i">
+      <default>30</default>
+      <range min="1" max="365"/>
+      <summary>Historical data retention in days</summary>
+    </key>
+
+    <!-- Notifications -->
+    <key name="notifications-enabled" type="b">
+      <default>false</default>
+      <summary>Enable smart notifications</summary>
+    </key>
+
+    <key name="notification-threshold-mbps" type="d">
+      <default>0.0</default>
+      <range min="0.0" max="10000.0"/>
+      <summary>Notification threshold in MB/s (0 = disabled)</summary>
+    </key>
+
+    <key name="notification-cooldown-seconds" type="i">
+      <default>60</default>
+      <range min="10" max="3600"/>
+      <summary>Minimum seconds between notifications</summary>
+    </key>
+
+    <!-- Speed test -->
+    <key name="speedtest-enabled" type="b">
+      <default>true</default>
+      <summary>Enable speed test feature</summary>
+    </key>
+
+  </schema>
+</schemalist>

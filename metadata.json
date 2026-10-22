@@ -1,0 +1,10 @@
+{
+  "name": "Net Speed Monitor",
+  "description": "Real-time internet download/upload speed monitor in the top panel with live graph, session statistics, speed test, and configurable interface selection.",
+  "uuid": "net-speed-monitor@pnr.tech",
+  "version": 1,
+  "shell-version": ["45", "46", "47", "48", "49", "50"],
+  "url": "",
+  "settings-schema": "org.gnome.shell.extensions.net-speed-monitor",
+  "gettext-domain": "net-speed-monitor"
+}

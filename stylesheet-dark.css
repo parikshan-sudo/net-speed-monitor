@@ -1,0 +1,252 @@
+/* stylesheet-dark.css — Dark theme visual styles for the Net Speed Monitor extension.
+ *
+ * Follows GNOME Shell's dark theme conventions.
+ */
+
+/* ── Panel indicator ─────────────────────────────────────────────────────── */
+
+#panel .panel-button.nsm-panel-button,
+.nsm-panel-button {
+    -natural-hpadding: 4px;
+    -minimum-hpadding: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.nsm-indicator-box {
+    spacing: 3px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.nsm-panel-icon {
+    icon-size: 0px;
+    width: 0px;
+    height: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.nsm-dl-label,
+.nsm-ul-label {
+    font-family: monospace;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 0px 1px;
+    margin: 0px;
+}
+
+/* ── Dashboard popup ─────────────────────────────────────────────────────── */
+
+.nsm-popup-item {
+    padding: 0;
+}
+
+.nsm-scrollview {
+    max-height: 480px;
+}
+
+.nsm-dashboard {
+    padding: 8px 12px 6px 12px;
+    spacing: 5px;
+    color: #ffffff;
+}
+
+.nsm-separator {
+    background-color: rgba(255, 255, 255, 0.15);
+    margin: 4px 0;
+}
+
+/* ── Section styling ─────────────────────────────────────────────────────── */
+
+.nsm-section {
+    spacing: 2px;
+    margin-bottom: 2px;
+}
+
+.nsm-section-title {
+    font-weight: bold;
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.88);
+    margin-bottom: 2px;
+}
+
+.nsm-kv-row {
+    padding: 0px;
+}
+
+.nsm-key {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.nsm-value {
+    font-size: 11px;
+    font-family: monospace;
+    color: rgba(255, 255, 255, 0.92);
+    text-align: right;
+}
+
+.nsm-dl-value {
+    color: #2dc96c;   /* green — download */
+}
+
+.nsm-ul-value {
+    color: #ff8c00;   /* orange — upload */
+}
+
+/* ── Graph area ──────────────────────────────────────────────────────────── */
+
+.nsm-graph {
+    border-radius: 6px;
+    margin: 4px 0;
+    background-color: rgba(0, 0, 0, 0.20);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.nsm-graph-header {
+    spacing: 6px;
+}
+
+.nsm-graph-legend {
+    spacing: 8px;
+    margin-bottom: 2px;
+}
+
+.nsm-dl-dot {
+    color: #2dc96c;
+    font-size: 11px;
+}
+
+.nsm-ul-dot {
+    color: #ff8c00;
+    font-size: 11px;
+}
+
+.nsm-legend-label {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.nsm-graph-windows {
+    spacing: 4px;
+    margin-top: 4px;
+}
+
+/* ── Buttons ─────────────────────────────────────────────────────────────── */
+
+.nsm-small-btn {
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.10);
+    color: rgba(255, 255, 255, 0.80);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.nsm-small-btn:hover {
+    background-color: rgba(255, 255, 255, 0.18);
+}
+
+.nsm-window-btn {
+    font-size: 10px;
+    padding: 1px 6px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.08);
+    color: rgba(255, 255, 255, 0.60);
+    border: 1px solid transparent;
+}
+
+.nsm-window-btn:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.nsm-window-btn-active {
+    background-color: rgba(45, 201, 108, 0.25);
+    color: #2dc96c;
+    border-color: rgba(45, 201, 108, 0.40);
+}
+
+.nsm-iface-scroll {
+    max-height: 84px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    padding: 2px 4px;
+}
+
+.nsm-iface-btn {
+    font-size: 10px;
+    padding: 1px 4px;
+    border-radius: 3px;
+    color: rgba(255, 255, 255, 0.70);
+    background-color: transparent;
+}
+
+.nsm-iface-btn:hover {
+    background-color: rgba(255, 255, 255, 0.10);
+}
+
+.nsm-iface-btn-active {
+    background-color: rgba(45, 201, 108, 0.20);
+    color: #2dc96c;
+}
+
+.nsm-prefs-btn {
+    font-size: 11px;
+    padding: 4px 16px;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.10);
+    color: rgba(255, 255, 255, 0.80);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    margin-top: 4px;
+}
+
+.nsm-prefs-btn:hover {
+    background-color: rgba(255, 255, 255, 0.18);
+}
+
+/* ── Speed test section ──────────────────────────────────────────────────── */
+
+.nsm-disclaimer {
+    font-size: 10px;
+    color: rgba(255, 200, 0, 0.85);
+    margin-bottom: 4px;
+}
+
+.nsm-btn-row {
+    spacing: 6px;
+    margin-bottom: 4px;
+}
+
+.nsm-test-btn {
+    font-size: 11px;
+    padding: 4px 12px;
+    border-radius: 6px;
+    background-color: rgba(45, 201, 108, 0.25);
+    color: #2dc96c;
+    border: 1px solid rgba(45, 201, 108, 0.40);
+}
+
+.nsm-test-btn:hover {
+    background-color: rgba(45, 201, 108, 0.40);
+}
+
+.nsm-cancel-btn {
+    font-size: 11px;
+    padding: 4px 12px;
+    border-radius: 6px;
+    background-color: rgba(255, 80, 80, 0.20);
+    color: rgba(255, 80, 80, 0.90);
+    border: 1px solid rgba(255, 80, 80, 0.30);
+}
+
+.nsm-cancel-btn:hover {
+    background-color: rgba(255, 80, 80, 0.35);
+}
+
+.nsm-test-progress {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.55);
+    font-style: italic;
+}
